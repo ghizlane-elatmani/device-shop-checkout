@@ -58,18 +58,14 @@ body {
 .main-section div {
   margin-left: 1rem;
   margin-right: 1rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 /* ITEMS CONTAINER */
 .items-container {
   background-color: #e5e7eb;
   padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .form-apply {
@@ -77,23 +73,16 @@ body {
 }
 
 .prices {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid red;
 }
 
-.sub-total,
-.tax,
-.total {
+.sub-total {
   border: 1px solid purple;
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
+  justify-content: space-between;
 }
+
 .sub-total p {
-  border: 1px solid lightcoral;
+  border: 2px solid lightcoral;
 }
 
 /* CONTACT CONTAINER */
