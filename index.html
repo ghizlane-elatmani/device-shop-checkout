@@ -125,8 +125,48 @@
       <div class="contact-container">
         <h2>Contact Information</h2>
 
-        <form action="">
-          <label for=""></label>
+        <form class="contact-form">
+          <div class="contact-form-div-type-1">
+            <label for="firstname" class="labels">First & Last name </label>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="Enter first & last name"
+              class="inputs"
+              required
+            />
+          </div>
+
+          <div class="contact-form-div-type-1">
+            <label for="email" class="labels">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter mail address"
+              class="inputs"
+              required
+            />
+          </div>
+
+          <div class="contact-form-div-type-2">
+            <div class="contact-form-div-type-1">
+              <label for="country" class="labels">Country</label>
+              <input type="text" name="country" class="inputs" required />
+            </div>
+
+            <div class="contact-form-div-type-1">
+              <label for="postal-code" class="labels">Postal Code</label>
+              <input
+                type="number"
+                name="postal-code"
+                placeholder="00720"
+                class="inputs"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="dark-button">Continue</button>
         </form>
       </div>
     </section>
