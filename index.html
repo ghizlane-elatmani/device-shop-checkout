@@ -10,17 +10,23 @@
       type="image/x-icon"
       sizes="96x96"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <link rel="stylesheet" href="styles/style.css" />
 
     <title>Device Shop Checkout</title>
   </head>
+
   <body>
     <div class="background-container">
       <img src="../resources/background-image.png" />
     </div>
 
     <header class="header">
-      <h1 class="header-title">Checkout</h1>
+      <h1 class="header-1 text-light-gray-3">Checkout</h1>
       <p class="header-items">3 ITEMS</p>
     </header>
 
@@ -28,28 +34,32 @@
       <div class="items-container">
         <!-- LIST ITEM -->
         <ul class="items-list">
+          <!-- ITEM 1 - IPHONE 12 PRO -->
           <li class="item">
             <div class="item-img">
               <img src="/resources/Gold.png" alt="Apple-watch" />
             </div>
-            <div class="item-text">
-              <div class="item-info">
-                <div>
-                  <p>Iphone 12 Pro</p>
-                  <p>$999.00</p>
+
+            <div class="flex-1 flex-spacebetween-column">
+              <div>
+                <div class="flex-center-spacebetween">
+                  <p class="font-weight-semi-bold">Iphone 12 Pro</p>
+                  <p class="font-weight-semi-bold">$999.00</p>
                 </div>
 
-                <p class="item-color">Golden</p>
+                <p class="text-dark-blue">Golden</p>
               </div>
 
-              <div class="item-button">
+              <div class="flex-center-spacebetween">
                 <p>x 1</p>
-                <button>X</button>
+                <button class="delete-button">
+                  <i class="fa fa-remove"></i>
+                </button>
               </div>
             </div>
           </li>
 
-          <li class="item">
+          <!-- <li class="item">
             <div class="item-img">
               <img src="/resources/Apple-watch.png" alt="Apple-watch" />
             </div>
@@ -89,7 +99,7 @@
                 <button>X</button>
               </div>
             </div>
-          </li>
+          </li> -->
         </ul>
 
         <!-- FORM APPLY COUPON -->
@@ -123,7 +133,7 @@
       </div>
 
       <div class="contact-container">
-        <h2>Contact Information</h2>
+        <h2 class="header-2">Contact Information</h2>
 
         <form class="contact-form">
           <div class="contact-form-div-type-1">
