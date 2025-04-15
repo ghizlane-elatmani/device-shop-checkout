@@ -31,13 +31,15 @@
     </header>
 
     <section class="main-section">
-      <div class="items-container">
+      <div class="items-container padding-container">
         <!-- LIST ITEM -->
-        <ul class="items-list">
-          <!-- ITEM 1 - IPHONE 12 PRO -->
-          <li class="item">
+        <ul class="items-list margin-bottom-medium">
+          <!-- 
+            ITEM 1 - IPHONE 12 PRO 
+          -->
+          <li class="item margin-bottom-medium">
             <div class="item-img">
-              <img src="/resources/Gold.png" alt="Apple-watch" />
+              <img src="/resources/Gold.png" alt="iphone-12" />
             </div>
 
             <div class="flex-1 flex-spacebetween-column">
@@ -59,52 +61,63 @@
             </div>
           </li>
 
-          <!-- <li class="item">
+          <!-- 
+            ITEM 2 - APPLE WATCH
+          -->
+          <li class="item margin-bottom-medium">
             <div class="item-img">
               <img src="/resources/Apple-watch.png" alt="Apple-watch" />
             </div>
-            <div class="item-text">
-              <div class="item-info">
-                <div>
-                  <p>Apple Watch</p>
-                  <p>$399.00</p>
+
+            <div class="flex-1 flex-spacebetween-column">
+              <div>
+                <div class="flex-center-spacebetween">
+                  <p class="font-weight-semi-bold">Apple Watch</p>
+                  <p class="font-weight-semi-bold">$399.00</p>
                 </div>
 
-                <p class="item-color">Blue</p>
+                <p class="text-dark-blue">Blue</p>
               </div>
 
-              <div class="item-button">
+              <div class="flex-center-spacebetween">
                 <p>x 1</p>
-                <button>X</button>
+                <button class="delete-button">
+                  <i class="fa fa-remove"></i>
+                </button>
               </div>
             </div>
           </li>
 
-          <li class="item">
+          <!-- 
+            ITEM 3 - iMac 
+          -->
+          <li class="item margin-bottom-medium">
             <div class="item-img">
-              <img src="/resources/iMac.png" alt="Apple-watch" />
+              <img src="/resources/iMac.png" alt="iMac" />
             </div>
-            <div class="item-text">
-              <div class="item-info">
-                <div>
-                  <p>iMac</p>
-                  <p>$1199.00</p>
+
+            <div class="flex-1 flex-spacebetween-column">
+              <div>
+                <div class="flex-center-spacebetween">
+                  <p class="font-weight-semi-bold">iMac</p>
+                  <p class="font-weight-semi-bold">$1199.00</p>
                 </div>
 
-                <p class="item-color">Green</p>
+                <p class="text-dark-blue">Green</p>
               </div>
 
-              <div class="item-button">
+              <div class="flex-center-spacebetween">
                 <p>x 1</p>
-                <button>X</button>
+                <button class="delete-button">
+                  <i class="fa fa-remove"></i>
+                </button>
               </div>
             </div>
-          </li> -->
+          </li>
         </ul>
 
         <!-- FORM APPLY COUPON -->
-
-        <form class="form-coupon">
+        <form class="form-coupon margin-bottom-medium">
           <input
             class="inputs input-coupon"
             type="text"
@@ -115,24 +128,24 @@
 
         <!-- TOTAL PRICE -->
         <div class="prices">
-          <div class="sub-total">
+          <div class="font-weight-bold text-dark-blue margin-bottom-small">
             <p>Sub total</p>
             <p>$2597.00</p>
           </div>
 
-          <div class="tax">
+          <div class="font-weight-bold text-dark-blue margin-bottom-small">
             <p>Tax</p>
             <p>$623.28</p>
           </div>
 
-          <div class="total">
+          <div class="font-weight-bold text-dark-gray margin-bottom-small">
             <p>Total</p>
             <p>$3220.28</p>
           </div>
         </div>
       </div>
 
-      <div class="contact-container">
+      <div class="contact-container padding-container">
         <h2 class="header-2">Contact Information</h2>
 
         <form class="contact-form">
@@ -183,8 +196,12 @@
 
     <footer class="footer">
       <div class="footer-text">
-        Coded by <a href="#">Ghizlane</a> | Challenge by
-        <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        Coded by <a href="#" class="text-light-gray-3">Ghizlane</a> | Challenge
+        by
+        <a
+          class="text-light-gray-3"
+          href="https://www.devchallenges.io?ref=challenge"
+          target="_blank"
           >devChallenges.io</a
         >.
       </div>

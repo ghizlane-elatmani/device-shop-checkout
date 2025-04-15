@@ -16,6 +16,7 @@
 }
 
 body {
+  min-height: 100vh;
   font-family: "Inter", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -31,7 +32,6 @@ body {
 }
 
 /* ========== TEXT STYLE ========== */
-
 .heading-1 {
   font-size: 24px;
   font-weight: 700;
@@ -59,7 +59,7 @@ body {
   font-weight: 500;
 }
 
-.font-weight-semi-bold {
+.font-weight-bold {
   font-weight: 600;
 }
 
@@ -68,12 +68,38 @@ body {
 }
 
 /* ========== LIST STYLE ========== */
-
 ul {
   list-style: none;
 }
 
+/* ========== MARGIN & PADDING ========== */
+.padding-container {
+  padding: 1rem;
+}
+
+.margin-bottom-small {
+  margin-bottom: 0.6rem;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 1rem;
+}
+
+/* MEDIA QUERY - MARGIN */
+@media only screen and (min-width: 600px) {
+  .margin-bottom-medium {
+    margin-bottom: 1.3rem;
+  }
+
+  .padding-container {
+    padding: 1.5rem;
+  }
+}
+
 /* ========== BUTTON ========== */
+button {
+  cursor: pointer;
+}
 
 .delete-button {
   background-color: transparent;
@@ -120,10 +146,8 @@ ul {
 
 .inputs {
   font-family: "Inter", sans-serif;
-
   flex: 1;
   padding: 1rem 0.7rem;
-
   border: 1px solid #d2d5da;
   border-radius: 0.6rem;
 }
@@ -142,7 +166,6 @@ ul {
 .background-container {
   width: 100%;
   height: 10rem;
-
   position: fixed;
   top: 0;
   left: 0;
@@ -167,7 +190,6 @@ ul {
 .header {
   margin-top: 2rem;
   margin-bottom: 2rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,24 +207,17 @@ ul {
 .header-items {
   font-size: 10px;
   color: #fff;
-
   background-color: #1d1d1f;
-
   padding: 0.25rem 0.5rem;
-
   border-radius: 60px;
 }
 
-/* ========== SECTION ========== */
+/* ========== MAIN SECTION ========== */
 .main-section {
   margin: 1rem;
-
   display: flex;
   flex-direction: column;
-
   justify-content: center;
-
-  border: 1px solid red;
 }
 
 /* MEDIA QUERY - FLEX */
@@ -216,10 +231,7 @@ ul {
 
 /* ITEMS CONTAINER */
 .items-container {
-  background-color: #e5e7eb;
-
-  padding: 1rem;
-
+  background-color: var(--gray-light-2);
   border-top-left-radius: 0.6rem;
   border-top-right-radius: 0.6rem;
 }
@@ -227,10 +239,6 @@ ul {
 /* MEDIA QUERY - WIDTH ITEM CONTAINER */
 @media only screen and (min-width: 1024px) {
   .items-container {
-    min-width: 30rem;
-
-    padding: 1.5rem;
-
     border-top-left-radius: 0.6rem;
     border-bottom-left-radius: 0.6rem;
     border-top-right-radius: 0rem;
@@ -240,12 +248,8 @@ ul {
 /* - LIST ITEMS - */
 
 .items-list {
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-
   display: flex;
   flex-direction: column;
-  row-gap: 1.3rem;
 
   border-bottom: 1px solid #d2d5da;
 }
@@ -275,18 +279,15 @@ ul {
 
 /* - FORM COUPON - */
 .form-coupon {
-  width: 100;
-  margin-bottom: 1rem;
-
+  width: 100%;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 /* - TOTAL - */
 .prices {
   display: flex;
   flex-direction: column;
-  row-gap: 0.5rem;
 }
 
 .prices div {
@@ -342,39 +343,18 @@ ul {
 
 /* FOOTER */
 .footer {
-  font-size: 14px;
-  color: white;
-  background-color: #222831;
-
+  height: 2.5rem;
+  color: var(--white);
+  background-color: var(--dark-grey);
   padding: 1.5rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* MEDIA QUERY - FOOTER */
-@media only screen and (min-width: 1024px) {
+/* MEDIA QUERY - WIDTH FORM CONTAINER */
+@media only screen and (min-width: 600px) {
   .footer {
-    font-size: 14px;
-    color: white;
-    background-color: #222831;
-
-    padding: 1.5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 5.5rem;
   }
-}
-
-.footer-text a {
-  font-weight: 600;
-  color: white;
-  text-underline-offset: 3px;
 }
